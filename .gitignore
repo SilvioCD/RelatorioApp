@@ -1,0 +1,26 @@
+# Ignora arquivos do Windows
+desktop.ini
+Thumbs.db
+
+# Pastas de build do Android
+/build/
+/app/build/
+/.gradle/
+/.idea/
+
+# Arquivos temporários do Android Studio
+*.iml
+*.log
+*.tmp
+*.bak
+
+# Ignora configurações locais
+local.properties
+
+# Ignora pastas ocultas do Google Drive (caso use)
+*.gsheet
+*.gdoc
+
+# Ignora caches
+.cxx/
+.cache/

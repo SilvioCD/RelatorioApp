@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/bando" android:hint="Bando (BK8, PPL1, BK8/PPL1)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/artigo" android:hint="Artigo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/entrada" android:hint="Entrada" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/saida" android:hint="Saída" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/ocorrencias" android:hint="Ocorrências" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/botao" android:text="Gerar Relatório" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/resultado" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Relatório aparecerá aqui"/>
+</LinearLayout>
