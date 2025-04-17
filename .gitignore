@@ -1,26 +1,54 @@
-# Ignora arquivos do Windows
+# Arquivos e pastas de build
+/build/
+**/build/
+
+# Cache do Gradle
+.gradle/
+.gradle-cache/
+!gradle-wrapper.jar
+
+# Arquivos de log e temporários
+*.log
+*.tmp
+*.lock
+
+# Arquivos do Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Cache do Kotlin
+.kotlinc/
+
+# Configuração de execução
+*.apk
+*.ap_
+
+# Arquivos de sistema do Windows
 desktop.ini
 Thumbs.db
 
-# Pastas de build do Android
-/build/
-/app/build/
-/.gradle/
-/.idea/
+# Arquivos ocultos do macOS
+.DS_Store
 
-# Arquivos temporários do Android Studio
-*.iml
-*.log
-*.tmp
-*.bak
+# Arquivos do Google Drive / OneDrive (se houver)
+.GDrive/
+.goutputstream-*
 
-# Ignora configurações locais
+# Arquivos gerados automaticamente
 local.properties
+captures/
+output.json
 
-# Ignora pastas ocultas do Google Drive (caso use)
-*.gsheet
-*.gdoc
+# Pasta de relatorios de teste
+/test-output/
 
-# Ignora caches
-.cxx/
-.cache/
+# Git
+*.orig
+*.rej
+*.swo
+*.swp
+
+# Ignorar chave do Firebase (se houver)
+google-services.json
