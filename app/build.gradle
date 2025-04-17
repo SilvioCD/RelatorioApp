@@ -1,3 +1,5 @@
+// build.gradle (módulo app)
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -22,10 +24,13 @@ android {
         }
     }
 
-    // ⬇️ Adicione este bloco
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packagingOptions {
+        exclude '**/desktop.ini'
     }
 }
 
@@ -40,3 +45,10 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
         jvmTarget = "17"
     }
 }
+
+// 👇 ESTA PARTE AQUI FICA FORA DO BLOCO android { }
+task cleanDesktopIni(type: Delete) {
+    delete fileTree(dir: 'src/main/res', includes: ['**/desktop.ini'])
+}
+
+preBuild.dependsOn cleanDesktopIni
