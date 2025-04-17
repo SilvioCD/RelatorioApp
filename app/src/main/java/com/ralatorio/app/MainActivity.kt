@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     ✅Artigo: ${artigo.text}
                     Entrada = $ent
                     Saída = $sai
-                    Rendimento: $rendimento%
+                    📊Rendimento: $rendimento%
                     
                     ⏩ Ocorrências:
                     ${ocorrencias.text}

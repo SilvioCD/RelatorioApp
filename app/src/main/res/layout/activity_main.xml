@@ -1,65 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/bando"
-        android:hint="Bando (BK8, PPL1, BK8/PPL1)"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <EditText
-        android:id="@+id/artigo"
-        android:hint="Artigo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/bando"
+            android:hint="Bando (BK8, PPL1, BK8/PPL1)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
 
-    <EditText
-        android:id="@+id/entrada"
-        android:hint="Entrada"
-        android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/artigo"
+            android:hint="Artigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
 
-    <EditText
-        android:id="@+id/saida"
-        android:hint="Saída"
-        android:inputType="number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/entrada"
+            android:hint="Entrada"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
 
-    <EditText
-        android:id="@+id/ocorrencias"
-        android:hint="Ocorrências"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginBottom="16dp"/>
+        <!-- Campo de saída com ícone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
 
-    <Button
-        android:id="@+id/botao"
-        android:text="Gerar Relatório"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/resultado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Relatório aparecerá aqui"
-        android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/saida"
+                android:hint="Saída"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+        </LinearLayout>
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/ocorrencias"
+            android:hint="Ocorrências"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/botao"
+            android:text="Gerar Relatório"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="333dp"
+            android:layout_marginTop="16dp"
+            android:gravity="left|top"
+            android:layoutDirection="ltr"
+            android:text="Relatório aparecerá aqui"
+            android:textAlignment="viewStart"
+            android:textDirection="ltr"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+</ScrollView>
