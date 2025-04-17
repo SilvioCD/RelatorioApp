@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 val sai = saida.text.toString().toInt()
                 val rendimento = if (ent != 0) (sai.toDouble() / ent * 100).toInt() else 0
                 val texto = """
-                    ⚠${bando.text} - bando
+                    ⚠Bando:${bando.text}  
                     ✅Artigo: ${artigo.text}
                     Entrada = $ent
                     Saída = $sai
