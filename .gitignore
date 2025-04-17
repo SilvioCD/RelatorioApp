@@ -26,6 +26,7 @@
 *.ap_
 
 # Arquivos de sistema do Windows
+**/desktop.ini
 desktop.ini
 Thumbs.db
 
